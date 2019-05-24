@@ -1,0 +1,12 @@
+{
+  "orgName": "mel Company",
+  "edition": "Developer",
+  "adminEmail": "melroy.noronha@geminidsystems.org",
+  "username": "melroy.noronha@geminidsystems.org",
+  "features": [],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true
+    }
+  }
+}
