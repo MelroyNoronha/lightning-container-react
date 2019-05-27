@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const dotenv = require('dotenv-webpack');
 
 const config = {
     mode: 'development',
@@ -25,6 +26,7 @@ const config = {
             },
             { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: ['url-loader?limit=100000'] }
         ]
-    }
+    },
+    plugins: [new dotenv()]
 };
 module.exports = config;

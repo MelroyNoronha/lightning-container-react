@@ -23,6 +23,7 @@
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
+    "dotenv-webpack": "^1.7.0",
     "lightning-container": "^1.0.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
