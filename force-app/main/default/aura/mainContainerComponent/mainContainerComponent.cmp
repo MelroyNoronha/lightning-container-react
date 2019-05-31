@@ -1,5 +1,0 @@
-<aura:component implements="flexipage:availableForAllPageTypes" access="global">
-  <lightning:card title="Main container component">
-    <lightning:container: aura:id="containerForReactApp" src={!$Resource.testReactApp + '/index.html'} onMessage="{!c.handleMessage}"/>
-  </lightning:card>
-</aura:component>	

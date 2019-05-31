@@ -26,3 +26,12 @@ Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
+
+# zip files
+*.zip
+
+# ignore .env files
+.env
+
+# ignore bundle.js
+bundle.js

@@ -1,0 +1,21 @@
+global with sharing class DCRController {
+	@RemoteAction
+    global static List<DCR__c> getAllDCRNames(){
+        return [SELECT Name from DCR__c];
+    }
+    
+    @RemoteAction
+    global static void deleteDCRByName(String DCRName){
+        DCR__c DCRToBeDeleted =  [SELECT Name from DCR__c WHERE Name = :DCRName];
+
+        delete DCRToBeDeleted;
+    }
+    
+    @RemoteAction
+    global static void insertNewDCRByName(String DCRName){
+		DCR__c newDCR =  new DCR__c();
+        newDCR.Name = DCRName;
+		 
+        insert newDCR;
+    }
+}

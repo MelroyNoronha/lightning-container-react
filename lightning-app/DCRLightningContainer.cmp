@@ -1,0 +1,10 @@
+<aura:component access="global" implements="flexipage:availableForAllPageTypes"
+  controller="DCRController">
+  <aura:attribute access="private" name="messageReceived" type="String"
+    default="" />
+
+  <lightning:container aura:id="DCRReactApp"
+    src="{!$Resource.DCRReactApp + '/index.html'}"
+    onmessage="{!c.handleMessageFromReact}" />
+
+</aura:component>

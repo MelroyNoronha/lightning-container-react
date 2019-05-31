@@ -6,7 +6,7 @@ const config = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, '../force-app/main/default/staticresources/'),
+        path: path.resolve(__dirname, '../ReactBuild/'),
         filename: 'bundle.js'
     },
     module: {

@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import Symbols from "../../../assets/icons/utility-sprite/svg/symbols.svg";
 import "../../../assets/styles/salesforce-lightning-design-system.css";
 import SVG from "react-inlinesvg";
+import {insertNewDCRByName} from "../../../middleware/DCRMiddleware";
 
 export const DCRLines = () => {
     const editObject = {
@@ -94,9 +95,13 @@ export const DCRLines = () => {
         updateEdit(editObject);
     }
     
-    
-    
-    
+    const hardCodedDCRName = "DCRL000001678";
+    function handleClickOnNew(event){
+        insertNewDCRByName(hardCodedDCRName).then(response => {
+            console.log("insert new DCR completed successfully");
+            console.log(response);
+        }).catch(err => console.log(err));
+    }  
 
     return (
         <div className="slds-var-m-around_xx-small	">
@@ -116,7 +121,7 @@ export const DCRLines = () => {
                             </h2>
                         </div>
                         <div className="slds-no-flex">
-                            <button className="slds-button slds-button_neutral">New</button>
+                            <button className="slds-button slds-button_neutral" onClick={handleClickOnNew}>New</button>
                         </div>
                     </header>
                 </div>
