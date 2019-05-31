@@ -1,7 +1,7 @@
 # Demo of React App inside lightning container
 
 ## Run this demo:
-
+### Clone this repository
 ### Build the React App
 * cd to testReactApp/
 * `npm install` to install dependencies
